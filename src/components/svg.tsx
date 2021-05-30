@@ -21,6 +21,15 @@ const icons = {
     ),
     viewBox: `0 0 30 30`,
   },
+  ellipse: {
+    shape: (
+      <ellipse cx="0" cy="0" rx="100" ry="50"
+        style={{
+          strokeWidth: 2,
+        }}/>
+    ),
+    viewBox: `0 0 100 50`
+  },
   arrowUp: {
     shape: (
       <React.Fragment>
@@ -67,7 +76,14 @@ const icons = {
   },
 }
 
-type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross"
+type IconType = "triangle" |
+  "circle" |
+  "ellipse" |
+  "arrowUp" |
+  "upDown" | 
+  "box" | 
+  "hexa" | 
+  "cross";
 
 type SVGProps = {
   stroke?: boolean
