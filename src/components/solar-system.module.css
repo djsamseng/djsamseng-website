@@ -1,0 +1,14 @@
+
+.cross {
+    z-index: -1;
+    animation: cross 50s infinite alternate-reverse both;
+}
+
+@keyframes cross {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(100px, -100px);
+    }
+}
