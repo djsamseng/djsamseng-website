@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW X8 -->
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="14.0308in" height="9.75996in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 13379 9307"
+viewBox="0 0 13379 3307"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
@@ -43,6 +43,7 @@ viewBox="0 0 13379 9307"
     .fil3 {fill:url(#id9)}
     .fil24 {fill:url(#id10)}
     .fil23 {fill:url(#id11)}
+    .filred {fill:#940000}
    ]]>
   </style>
   <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="6689.46" y1="129.572" x2="6689.46" y2="9176.93">
