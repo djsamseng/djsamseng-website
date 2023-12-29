@@ -27,9 +27,15 @@
     }
   }
 
+  let lines: {text:string; isLink: boolean}[][] = [
+    [ { text: "Show_Skills();", isLink: true }, { text: "// TypeScript, Python, etc.", isLink: false } ],
+    [ { text: "8_Years_Of_Experience();", isLink: true }, { text: "// Bloomberg LP, Lockheed Martin, Datamuse, CushyBots, ", isLink: false } ],
+    [ { text: "Projects();", isLink: true }, { text: "// Backend Infrastructure, Websites, iOS Apps, Telegram Bots", isLink: false } ]
+  ]
+
   onMount(() => {
     const interval = setInterval(() => {
-      updateCharCode();
+      // updateCharCode();
     }, 500);
     return () => {
       clearInterval(interval);
@@ -39,22 +45,44 @@
 
 
 
-<div class="max-w-[500px] mx-auto">
-  <div class="rounded-lg bg-[#131717] h-[300px] flex flex-col">
+<div class="w-full max-w-[800px] mx-auto">
+  <div class="rounded-lg bg-[#131717] h-[250px] sm:h-[300px] md:h-[400px] flex flex-col">
     <div class="flex flex-row space-x-1 p-1 absolute">
       <div class="rounded-lg h-2.5 w-2.5 bg-red-600"></div>
       <div class="rounded-lg h-2.5 w-2.5 bg-yellow-600"></div>
       <div class="rounded-lg h-2.5 w-2.5 bg-green-600"></div>
     </div>
     <div class="text-center text-white text-sm">Menu</div>
-    <div class="flex-1" />
-    <div class="flex flex-row overflow-clip text-sm text-gray-400 space-x-2 px-2">
+    <div class="flex-1 bg-[#1a1c20] flex flex-col">
+      {#each lines as line}
+        <div class="flex flex-row p-1">
+          {#each line as lineItem}
+            {#if lineItem.isLink}
+              <a href="#" class="text-blue-500 hover:underline cursor-pointer" >{lineItem.text}</a>
+            {/if}
+            {#if !lineItem.isLink}
+              <span class="text-green-900 ml-2 overflow-clip flex-nowrap text-nowrap">{lineItem.text}</span>
+            {/if}
+          {/each}
+        </div>
+      {/each}
+      <div class="flex flex-row p-1 items-center">
+        <span class="text-gray-300">{`> Select An Option`}</span>
+        <span class="h-4 w-2 bg-gray-300 ml-0.5"></span>
+      </div>
+    </div>
+    <div class="flex flex-row overflow-clip items-center text-sm text-gray-400 space-x-2 px-2">
 
-      <span class="">Menu</span>
+      <span class="far fa-circle-xmark"></span>
+      <span class="text-xs">0</span>
+      <span class="fas fa-triangle-exclamation"></span>
+      <span class="text-xs">0</span>
       <div class="flex-1" />
-      <span class="">LF</span>
+
       <span class="">N</span>
       <span class="">UTF-8</span>
+      <span class="">LF</span>
+      <span class="fas fa-bell"></span>
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd;"

@@ -2,6 +2,7 @@
 
 <script>
   import "../app.css";
+  import '@fortawesome/fontawesome-free/css/all.css';
   import RecordPlayer from "$lib/assets/record_player.svg"
 </script>
 
