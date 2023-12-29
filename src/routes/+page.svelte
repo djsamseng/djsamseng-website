@@ -6,7 +6,7 @@
 
 </script>
 
-<div class="pl-2">
+<div class="">
   <TypingKeyboard />
 </div>
 
