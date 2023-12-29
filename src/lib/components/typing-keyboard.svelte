@@ -46,8 +46,8 @@
 
 
 
-<div class="w-full max-w-[800px] mx-auto">
-  <div class="rounded-lg bg-[#131717] h-[250px] sm:h-[300px] md:h-[400px] flex flex-col">
+<div class="max-w-[800px] mx-auto p-2">
+  <div class="rounded-lg bg-[#131717] min-h-[210px] sm:h-[300px] md:h-[400px] flex flex-col">
     <div class="flex flex-row space-x-1 p-1 absolute">
       <div class="rounded-lg h-2.5 w-2.5 bg-red-600"></div>
       <div class="rounded-lg h-2.5 w-2.5 bg-yellow-600"></div>
@@ -62,7 +62,7 @@
               <a href="#" class="text-blue-500 hover:underline cursor-pointer" >{lineItem.text}</a>
             {/if}
             {#if !lineItem.isLink}
-              <span class="text-green-900 ml-2 overflow-clip flex-nowrap text-nowrap">{lineItem.text}</span>
+              <span class="text-green-900 ml-2 overflow-clip flex-nowrap text-nowrap whitespace-nowrap">{lineItem.text}</span>
             {/if}
           {/each}
         </div>

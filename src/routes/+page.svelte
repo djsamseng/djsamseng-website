@@ -1,11 +1,15 @@
 
 <script lang="ts">
-	import TypingKeyboard from "$lib/components/typing-keyboard.svelte";
+	import Galaxy from "$lib/components/galaxy.svelte";
+ import TypingKeyboard from "$lib/components/typing-keyboard.svelte";
 
 
 </script>
 
-<div class="container mx-auto">
+<div class="pl-2">
   <TypingKeyboard />
 </div>
 
+<div class="mt-20">
+  <Galaxy />
+</div>
