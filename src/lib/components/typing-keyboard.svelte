@@ -28,9 +28,10 @@
   }
 
   let lines: {text:string; isLink: boolean}[][] = [
-    [ { text: "Show_Skills();", isLink: true }, { text: "// TypeScript, Python, etc.", isLink: false } ],
-    [ { text: "8_Years_Of_Experience();", isLink: true }, { text: "// Bloomberg LP, Lockheed Martin, Datamuse, CushyBots, ", isLink: false } ],
-    [ { text: "Projects();", isLink: true }, { text: "// Backend Infrastructure, Websites, iOS Apps, Telegram Bots", isLink: false } ]
+    [ { text: "Show_Skills();", isLink: true }, { text: "// TypeScript, Python, SwiftUI, React", isLink: false } ],
+    [ { text: "8_Years_Of_Experience();", isLink: true }, { text: "// Bloomberg LP, Lockheed Martin, Datamuse, CushyBots", isLink: false } ],
+    [ { text: "Projects();", isLink: true }, { text: "// Backend Infrastructure, Websites, iOS Apps, Telegram Bots", isLink: false } ],
+    [ { text: "Life();", isLink: true }, { text: "// Purpose, Religion, Recipes, Health", isLink: false } ],
   ]
 
   onMount(() => {
