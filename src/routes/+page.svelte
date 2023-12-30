@@ -31,13 +31,10 @@
 
 <div class="min-h-[100vh]">
   <TypingKeyboard />
-</div>
-
-<div class="mt-20">
   <CardGameSkills />
 </div>
 
-<div class="mt-20">
+<div class="">
   <div class="bg-[#131717] text-white p-4" bind:this={experienceDiv} >
     <span class="text-xl">Experience</span>
     {#if LazyGlobe}
