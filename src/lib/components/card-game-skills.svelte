@@ -4,11 +4,24 @@
 </script>
 
 
-<div class="pb-10">
+<div class="pb-10 ">
 
-  <div class="bg-[#240303] rounded-2xl p-4 m-4">
-    <div class=" bg-green-950 rounded-md text-white flex flex-col">
-      <span class="p-4 text-xl text-white">Skills</span>
+  <div class="bg-[#F2DDBD] p-4 ">
+    <div class="  rounded-md text-[#131717] flex flex-col">
+      <div class="p-4 text-xl">Skills</div>
+
+      <div class="place-self-center flex flex-col items-center">
+        <span class=" text-xl">TypeScript</span>
+        <ul>
+          <li>
+            <div class="flex flex-col">
+              <span class="underline">Bloomberg LP</span>
+              <span class="mt-1 max-w-[800px]">At Bloomberg we rewrote Launchpad primarily using JavaScript and TypeScript both on the backend and frontend.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
       <div class="flex flex-row flex-wrap -mb-10">
         <div class="flex-1" />
 

@@ -5,7 +5,7 @@
 	import { onMount } from "svelte";
 
   let LazyGlobe: any;
-  let experienceDiv: HTMLDivElement;
+  let experienceDiv: HTMLSpanElement;
   const loadLazyGlobe = () => import("$lib/components/globe3d.svelte");
 
   async function onExperienceInView(entries: IntersectionObserverEntry[]) {
@@ -35,8 +35,8 @@
 </div>
 
 <div class="">
-  <div class="bg-[#131717] text-white p-4" bind:this={experienceDiv} >
-    <span class="text-xl">Experience</span>
+  <div class="bg-[#1a1c20] text-white p-4 min-h-20"  >
+    <span class="text-xl" bind:this={experienceDiv}>Experience</span>
     {#if LazyGlobe}
       <LazyGlobe.default />
     {/if}

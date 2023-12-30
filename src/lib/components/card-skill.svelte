@@ -5,7 +5,7 @@
 
 
 
-<div class="h-[160px] w-[120px] bg-white flex flex-col items-center text-black rounded-xl border border-black shadow-lg">
+<div class="h-[160px] w-[120px] bg-white flex flex-col items-center rounded-xl border border-[#131717] shadow-lg">
   <span class="place-self-start ml-1">TS</span>
   <img class="place-self-start ml-1 h-4 w-4 -mt-1" src={Spades} alt="Spades" />
   <div class="flex-1" />
