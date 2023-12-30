@@ -4,7 +4,7 @@ import Elipse from "./elipse.svelte";
 </script>
 
 <div class=" bg-[#131717]">
-  <div class="ml-4 p-4 text-xl text-white">Experience</div>
+  <div class="p-4 text-xl text-white">Experience</div>
 </div>
 <div class="bg-[#131717] relative h-[600px] z-10">
 

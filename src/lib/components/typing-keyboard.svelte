@@ -7,6 +7,17 @@
   const endCharCode = "z".charCodeAt(0);
   let currCharCode = beginCharCode;
 
+  let itermCursor: HTMLSpanElement;
+
+  function toggleItermCursor() {
+    if (itermCursor.style.display === "none") {
+      itermCursor.style.display = "block";
+    }
+    else {
+      itermCursor.style.display = "none";
+    }
+  }
+
   function updateCharCode() {
     const currentLetter = String.fromCharCode(currCharCode);
     const currentHighlight = document.getElementById("key" + currentLetter);
@@ -28,8 +39,8 @@
   }
 
   let lines: {text:string; isLink: boolean}[][] = [
-    [ { text: "Show_Skills();", isLink: true }, { text: "// TypeScript, Python, SwiftUI, React", isLink: false } ],
-    [ { text: "8_Years_Of_Experience();", isLink: true }, { text: "// Bloomberg LP, Lockheed Martin, Datamuse, CushyBots", isLink: false } ],
+    [ { text: "Coding_Skills();", isLink: true }, { text: "// TypeScript, Python, SwiftUI, React", isLink: false } ],
+    [ { text: "Job_Experience();", isLink: true }, { text: "// Bloomberg LP, Lockheed Martin, Datamuse, CushyBots", isLink: false } ],
     [ { text: "Projects();", isLink: true }, { text: "// Backend Infrastructure, Websites, iOS Apps, Telegram Bots", isLink: false } ],
     [ { text: "Life();", isLink: true }, { text: "// Purpose, Religion, Recipes, Health", isLink: false } ],
   ]
@@ -37,6 +48,7 @@
   onMount(() => {
     const interval = setInterval(() => {
       // updateCharCode();
+      toggleItermCursor();
     }, 500);
     return () => {
       clearInterval(interval);
@@ -69,7 +81,7 @@
       {/each}
       <div class="flex flex-row p-1 items-center">
         <span class="text-gray-300">{`> Select An Option`}</span>
-        <span class="h-4 w-2 bg-gray-300 ml-0.5"></span>
+        <span bind:this={itermCursor} class="h-4 w-2 bg-gray-300 ml-0.5"></span>
       </div>
     </div>
     <div class="flex flex-row overflow-clip items-center text-sm text-gray-400 space-x-2 px-2">
