@@ -41,7 +41,7 @@ var Globe: any;
 var parentDiv: HTMLDivElement;
 let textElems: Text[] = [];
 
-const canvasWidth = 500;
+const canvasWidth = 600;
 
 onMount(() => {
   init();
@@ -64,7 +64,6 @@ function init() {
   // Initialize renderer
   renderer = new WebGLRenderer({ antialias: true });
   renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(window.innerWidth, window.innerHeight);
   // renderer.outputEncoding = THREE.sRGBEncoding;
   parentDiv?.appendChild(renderer.domElement);
 
@@ -207,11 +206,13 @@ function onMouseMove(event: MouseEvent) {
 }
 
 function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  const width = window.innerWidth;
+  const height = Math.max(window.innerHeight / 2, 300);
+  camera.aspect = width / height;
   camera.updateProjectionMatrix();
-  windowHalfX = window.innerWidth / 1.5;
-  windowHalfY = window.innerHeight / 1.5;
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  windowHalfX = width / 1.5;
+  windowHalfY = height / 1.5;
+  renderer.setSize(width, height);
 }
 
 function animate() {
