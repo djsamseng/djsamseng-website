@@ -4,12 +4,12 @@
 </script>
 
 
-<div class="">
+<div class="pb-10">
 
-  <div class="bg-[#240303] rounded-2xl p-4">
-    <div class=" bg-green-950 text-white flex flex-col">
+  <div class="bg-[#240303] rounded-2xl p-4 m-4">
+    <div class=" bg-green-950 rounded-md text-white flex flex-col">
       <span class="p-4 text-xl text-white">Skills</span>
-      <div class="flex flex-row flex-wrap">
+      <div class="flex flex-row flex-wrap -mb-10">
         <div class="flex-1" />
 
         <div class="z-10 hover:z-20">
