@@ -1,12 +1,14 @@
 <script lang="ts">
 
 	import CardSkill from "./card-skill.svelte";
+
+  //bg-[#F2DDBD]
 </script>
 
 
 <div class="pb-10 ">
 
-  <div class="bg-[#F2DDBD] p-4 ">
+  <div class="p-4 ">
     <div class="  rounded-md text-[#131717] flex flex-col">
       <div class="p-4 text-xl">Skills</div>
 
