@@ -3,7 +3,7 @@
 <script>
   import "../app.css";
   import '@fortawesome/fontawesome-free/css/all.css';
-  import RecordPlayer from "$lib/assets/record_player.svg"
+  import RecordPlayer from "$lib/assets/record_player.svg";
 </script>
 
 <div class="bg-[#eed4ab] min-h-[100vh] ">

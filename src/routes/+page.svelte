@@ -4,6 +4,7 @@
   import CardGameSkills from "$lib/components/card-game-skills.svelte";
 	import { onMount } from "svelte";
 	import ExperienceComponent from "$lib/components/experience-component.svelte";
+  import SamSengSquare from "$lib/assets/SamSengSquare.jpg";
 
   let LazyGlobe: any;
   let lazyGlobeStartDiv: HTMLSpanElement;
@@ -35,7 +36,7 @@
   })
 </script>
 
-<div class="min-h-[100vh]">
+<div class="min-h-[90vh]">
   <TypingKeyboard />
 </div>
 
@@ -200,6 +201,9 @@
     <div class="max-w-6xl mx-auto">
       <div class="max-w-3xl mx-auto">
         <div id="life" class="text-3xl py-5">Life</div>
+        <div class="flex flex-col items-center">
+          <img class="rounded-full w-[120px] h-[120px] md:w-[230px] md:h-[230px] object-cover " src={SamSengSquare} alt="Sam Seng" />
+        </div>
       </div>
     </div>
   </div>
