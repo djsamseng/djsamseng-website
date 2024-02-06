@@ -38,11 +38,12 @@
     }
   }
 
-  let lines: {text:string; isLink: boolean}[][] = [
-    [ { text: "Coding_Skills();", isLink: true }, { text: "// TypeScript, Python, SwiftUI, React", isLink: false } ],
-    [ { text: "Job_Experience();", isLink: true }, { text: "// Bloomberg LP, Lockheed Martin, Datamuse, CushyBots", isLink: false } ],
-    [ { text: "Projects();", isLink: true }, { text: "// Backend Infrastructure, Websites, iOS Apps, Telegram Bots", isLink: false } ],
-    [ { text: "Life();", isLink: true }, { text: "// Purpose, Religion, Recipes, Health", isLink: false } ],
+  let lines: {text:string; link: string|null}[][] = [
+
+    [ { text: "Experience();", link: "#experience" }, { text: "// 8+ Years", link: null } ],
+    [ { text: "Skills();", link: "#skills" }, { text: "// TypeScript, Python, SwiftUI, React", link: null } ],
+    [ { text: "Projects();", link: "#projects" }, { text: "// AI, Web Apps", link: null } ],
+    [ { text: "Life();", link: "#life" }, { text: "// Purpose, Religion, Food", link: null } ],
   ]
 
   onMount(() => {
@@ -70,10 +71,10 @@
       {#each lines as line}
         <div class="flex flex-row p-1">
           {#each line as lineItem}
-            {#if lineItem.isLink}
-              <a href="#" class="text-blue-500 hover:underline cursor-pointer" >{lineItem.text}</a>
+            {#if lineItem.link}
+              <a href={lineItem.link} class="text-blue-500 hover:underline cursor-pointer" >{lineItem.text}</a>
             {/if}
-            {#if !lineItem.isLink}
+            {#if !lineItem.link}
               <span class="text-green-900 ml-2 overflow-clip flex-nowrap text-nowrap whitespace-nowrap">{lineItem.text}</span>
             {/if}
           {/each}
