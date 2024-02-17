@@ -1,49 +1,24 @@
 
 <script lang="ts">
   import TypingKeyboard from "$lib/components/typing-keyboard.svelte";
-  import CardGameSkills from "$lib/components/card-game-skills.svelte";
-	import { onMount } from "svelte";
 	import ExperienceComponent from "$lib/components/experience-component.svelte";
   import SamSengSquare from "$lib/assets/SamSengSquare.jpg";
 
-  let LazyGlobe: any;
-  let lazyGlobeStartDiv: HTMLSpanElement;
-  let lazyGlobeDiv: HTMLDivElement;
-  const loadLazyGlobe = () => import("$lib/components/globe3d.svelte");
+  import DownloadOnAppStore from "$lib/assets/Download_on_the_App_Store_Badge.svg";
+  import ipad7 from "$lib/assets/screenshot7.png";
+  import iphone8 from "$lib/assets/screenshot8.png";
+  import iphone9 from "$lib/assets/screenshot9.png";
 
-  async function onExperienceInView(entries: IntersectionObserverEntry[]) {
-    if (LazyGlobe) {
-      return;
-    }
-    if (entries.length === 0 || entries[0].intersectionRatio <= 0) {
-      return;
-    }
-    console.log("Loading globe");
-    LazyGlobe = await loadLazyGlobe();
-  }
-
-
-  onMount(() => {
-    const observer = new IntersectionObserver(onExperienceInView, {
-      root: null,
-      threshold: 0.1,
-    });
-    observer.observe(lazyGlobeStartDiv);
-    observer.observe(lazyGlobeDiv);
-    return () => {
-      observer.disconnect();
-    }
-  })
 </script>
 
-<div class="min-h-[90vh]">
+<div class="">
   <TypingKeyboard />
 </div>
 
 <div class="">
 
-  <div class="bg-[#1a1c20] text-white p-4 min-h-[500px]" >
-    <div class="hidden lg:block sticky top-10">
+  <div class="bg-[#1a1c20] text-white min-h-[500px]" >
+    <div class="hidden lg:block sticky top-10 p-4">
       <div class="inline-block float-right text-center">
         <div class="text-sm">2016</div>
         <div class="text-xs">|</div>
@@ -51,20 +26,15 @@
         <div class="text-xs">|</div>
         <div class="text-sm">2021</div>
         <div class="text-xs">|</div>
-        <div class="">Independent</div>
-        <div class="">Contractor</div>
+        <div class="">Free Agent</div>
         <div class="text-xs">|</div>
         <div class="text-sm">2024</div>
       </div>
     </div>
-    <div class="max-w-6xl mx-auto">
-      <div class="max-w-3xl mx-auto">
+    <div class="p-4">
+      <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="experience" class="text-3xl py-5">Experience</div>
       </div>
-
-      <span class="text-xl" bind:this={lazyGlobeStartDiv}></span>
-
-
 
 
       <ExperienceComponent
@@ -107,7 +77,40 @@
               ]
             }
           ]}
-      />
+      >
+        <div class="space-y-5 my-5">
+          <div class="">
+            <div class="flex flex-col justify-between">
+              <h1 class="hidden">OneLook Thesaurus for iOS and macOS</h1>
+              <div class="text-3xl text-center">
+                <p class="">OneLook Thesaurus</p>
+                <p class="text-xl font-sans pt-4 pb-2">for iOS and macOS</p>
+              </div>
+              <div class="mx-auto w-full px-5 sm:px-0 sm:w-4/5 lg:w-3/4 h-[300px] md:h-[500px] flex-shrink-0 max-w-3xl">
+                <div class="relative">
+                  <div class="absolute w-full">
+                    <img class="max-h-[300px] md:max-h-[500px] mx-auto" src={ipad7} alt="iPad app screenshot"/>
+                  </div>
+
+                  <div class="absolute w-full top-20">
+                    <img class="max-h-[200px] md:max-h-[400px] -rotate-12 -ml-10 mt-8 " src={iphone9} alt="iPhone app screenshot"/>
+                  </div>
+
+                  <div class="absolute w-full top-20">
+                    <img class="max-h-[200px] md:max-h-[400px] rotate-12 ml-auto -mr-10 mt-8" src={iphone8} alt="iPhone app screenshot"/>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-auto mt-5">
+                <a href="https://apps.apple.com/us/app/onelook/id1615071061">
+                  <img class="h-[62px]" src={DownloadOnAppStore} alt="Download on the app store"/>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </ExperienceComponent>
 
       <ExperienceComponent
           title="Cushybots"
@@ -159,17 +162,12 @@
       />
 
     </div>
-    <div class="overflow-x-hidden min-h-[50vh]" bind:this={lazyGlobeDiv}>
-      {#if LazyGlobe}
-        <LazyGlobe.default />
-      {/if}
-    </div>
 
   </div>
 
   <div class="p-4 min-h-[500px]">
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="skills" class="text-3xl py-5">Skills</div>
       </div>
     </div>
@@ -189,7 +187,7 @@
       </div>
     </div>
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="projects" class="text-3xl py-5">Projects</div>
       </div>
 
@@ -199,7 +197,7 @@
 
   <div class="p-4 min-h-[500px]">
     <div class="max-w-6xl mx-auto">
-      <div class="max-w-3xl mx-auto">
+      <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="life" class="text-3xl py-5">Life</div>
         <div class="flex flex-col items-center">
           <img class="rounded-full w-[120px] h-[120px] md:w-[230px] md:h-[230px] object-cover " src={SamSengSquare} alt="Sam Seng" />

@@ -196,7 +196,7 @@ function initGlobe() {
   scene.add(Globe);
   addOrbit(110, -8, ["Internships", "Lockheed Martin", "SIG"], true);
   addOrbit(170, 2, ["Bloomberg LP", "5+ Years"], true);
-  addOrbit(180, 8, ["Independent Contractor", "Datamuse", "Cushybots"], false);
+  addOrbit(180, 8, ["Contractor", "Datamuse", "Cushybots"], false);
 
 }
 
