@@ -81,9 +81,9 @@
         ]}
       >
         <div class="space-y-5 my-5">
-          <div class="flex flex-row flex-wrap sm:grid grid-cols-2 space-x-2">
-            <img class="mt-2" src={LaunchpadSamIntroSlide} alt="Presenting Launchpad" />
-            <img class="mt-2" src={LaunchpadSamIb} alt="Presenting Launchpad" />
+          <div class="flex flex-row flex-wrap sm:grid grid-cols-2 space-y-2 sm:space-y-0 sm:space-x-2">
+            <img class="" src={LaunchpadSamIntroSlide} alt="Presenting Launchpad" />
+            <img class="" src={LaunchpadSamIb} alt="Presenting Launchpad" />
           </div>
         </div>
       </ExperienceComponent>
@@ -110,7 +110,7 @@
                 <p class="">OneLook Thesaurus</p>
                 <p class="text-xl font-sans pt-4 pb-2">for iOS and macOS</p>
               </div>
-              <div class="mx-auto w-full px-5 sm:px-0 sm:w-4/5 lg:w-3/4 h-[300px] md:h-[500px] flex-shrink-0 max-w-3xl">
+              <div class="mx-auto w-11/12 px-5 sm:px-0 sm:w-4/5 lg:w-3/4 h-[300px] md:h-[500px] flex-shrink-0 max-w-3xl">
                 <div class="relative">
                   <div class="absolute w-full">
                     <img class="max-h-[300px] md:max-h-[500px] mx-auto" src={ipad7} alt="iPad app screenshot"/>
