@@ -81,7 +81,7 @@
         </div>
       {/each}
       <div class="flex flex-row p-1 items-center">
-        <span class="text-gray-300">{`> Select An Option`}</span>
+        <span class="text-gray-300">{`> `}</span>
         <span bind:this={itermCursor} class="h-4 w-2 bg-gray-300 ml-0.5"></span>
       </div>
     </div>

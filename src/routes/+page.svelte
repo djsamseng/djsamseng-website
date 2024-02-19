@@ -8,10 +8,23 @@
   import ipad7 from "$lib/assets/screenshot7.png";
   import iphone8 from "$lib/assets/screenshot8.png";
   import iphone9 from "$lib/assets/screenshot9.png";
+	import CardSkill from "$lib/components/card-skill.svelte";
+
+  const lifeQuotes = [
+    "Look at the person next to you, and love them like God loves them. Dream it, live it, feel it",
+    "Find the gold in someone today - Laura Lentz",
+    "Defeat evil with love - The Bible",
+    "You will continue to suffer if you have an emotional reaction to everything that is said to you. True power is sitting back and observing things with logic. True power is restraint. If words control you that means everyone else can control you. - Warren Buffet",
+    "Our world is determined on tearing one another down. Can we be different and lift another up? - Carl Lentz",
+    "Stay curious, ask questions, be interested and follow up - Allen Tan",
+    "Don't be a pharisee looking to trap others/promote yourself at others' expense - Jordan Peterson",
+    "Optimists do better in the long run. Get out of a relative mindset. Demonizing money is playing the status game. Stop sacrificing today for an imaginary tomorrow. Do what you love, do it better than anybody else, then find a way to map that to what society wants. Create a business in 3 months: raise money, assemble a team, and launch. It's fun to see what you can put together. Making money is giant lump sums helps not upgrade your lifestyle and frees you from the lust of money (fear of not having). If someone is talking a lot about how honest they are, they’re probably dishonest. When someone spends too much time talking about their own values or they’re talking themselves up, they’re covering for something. Be very careful about doing things you are fundamentally not going to be proud of, because they will damage you. The first time someone acts this way, I will warn them. By the way, nobody changes. Then I just distance myself from them. I cut them out of my life. Optimistic Contrarian. Problem solving: Discard memory and identity and focus on the problem. Praise specifically, criticize generally (not the person but the general activity). Leverage is how much of an advantage you have over the alternative - Naval Ravikant"
+
+  ]
 
 </script>
 
-<div class="">
+<div class="pb-10 xl:pb-20">
   <TypingKeyboard />
 </div>
 
@@ -26,14 +39,16 @@
         <div class="text-xs">|</div>
         <div class="text-sm">2021</div>
         <div class="text-xs">|</div>
-        <div class="">Free Agent</div>
+        <div class="">Founder</div>
+        <div class="-my-2">+</div>
+        <div class="">Contractor</div>
         <div class="text-xs">|</div>
         <div class="text-sm">2024</div>
       </div>
     </div>
     <div class="p-4">
       <div class="max-w-3xl xl:max-w-6xl mx-auto">
-        <div id="experience" class="text-3xl py-5">Experience</div>
+        <div id="experience" class="text-3xl pt-5">Experience</div>
       </div>
 
 
@@ -127,6 +142,8 @@
           ]}
       />
 
+
+
       <ExperienceComponent
           title="Susquehanna International Group"
           years="Summer 2015"
@@ -169,7 +186,33 @@
     <div class="max-w-6xl mx-auto">
       <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="skills" class="text-3xl py-5">Skills</div>
+
       </div>
+      <div class="">
+        <div class="text-xl">Programming Languages</div>
+        <div class="flex flex-row flex-wrap">
+          <CardSkill name="TypeScript" digit=".ts" />
+          <CardSkill name="JavaScript" digit=".js" />
+          <CardSkill name="Python" digit=".py" />
+          <CardSkill name="SwiftUI" digit=".swift" />
+          <CardSkill name="C++" digit=".cpp" />
+          <CardSkill name="SQL" digit=".sql" />
+          <CardSkill name="CSS" digit=".css" />
+        </div>
+      </div>
+
+      <div class="">
+        <div class="text-xl">Frameworks and Technologies</div>
+        <div class="flex flex-row flex-wrap">
+          <CardSkill name="SvelteKit" digit="SK" />
+          <CardSkill name="iOS" digit="iOS" />
+          <CardSkill name="Supabase" digit="S" />
+          <CardSkill name="NextJS" digit="N" />
+          <CardSkill name="ReactJS" digit="R" />
+          <CardSkill name="Tailwind CSS" digit="T" />
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -191,16 +234,107 @@
         <div id="projects" class="text-3xl py-5">Projects</div>
       </div>
 
+      <ExperienceComponent
+          title="Artificial Intelligence Research"
+          years="2021 - Current"
+          position="Software Engineer"
+          description={null}
+          sections={[
+            {
+              bullets: [
+                "Investigated non-gradient methods for decision making",
+                "Filed a provisional patent for a new audio frequency transform",
+                "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
+                "Built the ability for the AI agent to learn and imitate a user or dataset"
+              ]
+            }
+          ]}
+        />
+
+        <ExperienceComponent
+          title="GatherBadger"
+          years="2022"
+          position="Software Engineer"
+          description={null}
+          sections={[
+            {
+              bullets: [
+                "Built a gift giving search engine using TypeScript, React, Supabase and TailwindCSS"
+              ]
+            }
+          ]}
+        />
+
+        <ExperienceComponent
+          title="TakeOff"
+          years="2022-2023"
+          position="Software Engineer"
+          description={null}
+          sections={[
+            {
+              bullets: [
+                "Built an automatic construction plan summary provider for contractors, subcontractors and electricians to count windows, doors, lights, fixtures and calculate square footage",
+                "Used Python, Typescript, React, TailwindCSS, Supabase, and AWS Lambda",
+                "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
+                "Submitted an open source pull request to AWS Lambda allowing options requests in testing. github.com/aws/aws-lambda-runtime-interface-emulator/pull/84"
+              ]
+            }
+          ]}
+        />
+
+        <ExperienceComponent
+          title="Enjoy CRM"
+          years="2023 - Current"
+          position="Software Engineer"
+          description={null}
+          sections={[
+            {
+              bullets: [
+                "Built a Customer Relationship Management platform for Enjoy Church",
+                "Features a web and Telegram user interface",
+                "Built rostering software for church volunteers",
+                "Used Typescript, Sveltekit, Supabase and AWS Lambda"
+              ]
+            }
+          ]}
+        />
     </div>
   </div>
 
 
-  <div class="p-4 min-h-[500px]">
+  <div class="p-4 min-h-[500px] pb-20">
     <div class="max-w-6xl mx-auto">
       <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="life" class="text-3xl py-5">Life</div>
         <div class="flex flex-col items-center">
           <img class="rounded-full w-[120px] h-[120px] md:w-[230px] md:h-[230px] object-cover " src={SamSengSquare} alt="Sam Seng" />
+        </div>
+        <div class="flex flex-col items-center text-3xl mt-5">
+          <div class="">Faith in Jesus</div>
+        </div>
+        <div class="flex flex-col items-center text-xl mt-2">
+          <div class="">Love God</div>
+          <div class="">Love Others</div>
+          <div class="">Love Yourself</div>
+          <div class="italic">But I'm a work in progress</div>
+        </div>
+        <div class="flex flex-col items-center text-3xl mt-10">
+          <div class="">Today it's</div>
+        </div>
+        <div class="flex flex-col items-center text-xl mt-2">
+          <div class="">Gym, Work, Eat, Sleep, Repeat</div>
+        </div>
+
+        <div class="flex flex-col items-center mt-10">
+          <div class="text-3xl pt-5">Startup Recipe</div>
+          <div class="italic pb-5">Current Hypothesis</div>
+          <ul class=" list-decimal">
+            <li class="">Find a problem you want to solve (Watch: <a href="https://m.youtube.com/watch?v=NIHTMVkSmEE" class="text-blue-600">https://m.youtube.com/watch?v=NIHTMVkSmEE</a>)</li>
+            <li class="">Validate the problem (Read: <a href="https://www.momtestbook.com/" class="text-blue-600">The Mom Test</a>)</li>
+            <li class="">Build/sell a product that solves that problem</li>
+            <li class="">Scale and build leverage (Watch:
+              <a href="https://m.youtube.com/watch?v=qxQIcDrre1E" class="text-blue-600">https://m.youtube.com/watch?v=qxQIcDrre1E</a>)</li>
+          </ul>
         </div>
       </div>
     </div>
