@@ -3,6 +3,8 @@
   import TypingKeyboard from "$lib/components/typing-keyboard.svelte";
 	import ExperienceComponent from "$lib/components/experience-component.svelte";
   import SamSengSquare from "$lib/assets/SamSengSquare.jpg";
+  import LaunchpadSamIntroSlide from "$lib/assets/LaunchpadSamIntroSlide.jpg";
+  import LaunchpadSamIb from "$lib/assets/LaunchpadSamIB.jpg";
 
   import DownloadOnAppStore from "$lib/assets/Download_on_the_App_Store_Badge.svg";
   import ipad7 from "$lib/assets/screenshot7.png";
@@ -77,7 +79,14 @@
             ]
           }
         ]}
-      />
+      >
+        <div class="space-y-5 my-5">
+          <div class="flex flex-row flex-wrap sm:grid grid-cols-2 space-x-2">
+            <img class="mt-2" src={LaunchpadSamIntroSlide} alt="Presenting Launchpad" />
+            <img class="mt-2" src={LaunchpadSamIb} alt="Presenting Launchpad" />
+          </div>
+        </div>
+      </ExperienceComponent>
       <ExperienceComponent
           title="OneLook Thesaurus"
           years="2022 - 2023"
@@ -309,33 +318,15 @@
         <div class="flex flex-col items-center">
           <img class="rounded-full w-[120px] h-[120px] md:w-[230px] md:h-[230px] object-cover " src={SamSengSquare} alt="Sam Seng" />
         </div>
-        <div class="flex flex-col items-center text-3xl mt-5">
-          <div class="">Faith in Jesus</div>
-        </div>
-        <div class="flex flex-col items-center text-xl mt-2">
+
+        <div class="flex flex-col items-center text-xl mt-5 text-center">
+          <div class="italic my-2">I'm a work in progress</div>
           <div class="">Love God</div>
           <div class="">Love Others</div>
           <div class="">Love Yourself</div>
-          <div class="italic">But I'm a work in progress</div>
-        </div>
-        <div class="flex flex-col items-center text-3xl mt-10">
-          <div class="">Today it's</div>
-        </div>
-        <div class="flex flex-col items-center text-xl mt-2">
-          <div class="">Gym, Work, Eat, Sleep, Repeat</div>
+
         </div>
 
-        <div class="flex flex-col items-center mt-10">
-          <div class="text-3xl pt-5">Startup Recipe</div>
-          <div class="italic pb-5">Current Hypothesis</div>
-          <ul class=" list-decimal">
-            <li class="">Find a problem you want to solve (Watch: <a href="https://m.youtube.com/watch?v=NIHTMVkSmEE" class="text-blue-600">https://m.youtube.com/watch?v=NIHTMVkSmEE</a>)</li>
-            <li class="">Validate the problem (Read: <a href="https://www.momtestbook.com/" class="text-blue-600">The Mom Test</a>)</li>
-            <li class="">Build/sell a product that solves that problem</li>
-            <li class="">Scale and build leverage (Watch:
-              <a href="https://m.youtube.com/watch?v=qxQIcDrre1E" class="text-blue-600">https://m.youtube.com/watch?v=qxQIcDrre1E</a>)</li>
-          </ul>
-        </div>
       </div>
     </div>
   </div>
