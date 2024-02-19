@@ -330,4 +330,11 @@
       </div>
     </div>
   </div>
+  <div class="flex flex-col items-center pb-10">
+    <div class="flex flex-row text-5xl items-center space-x-5">
+      <a href="https://www.linkedin.com/in/samuel-seng-89500875/" target="_blank"><i class="fab fa-linkedin text-blue-900" /></a>
+      <a href="https://github.com/djsamseng" target="_blank"><i class="fab fa-github text-black" /></a>
+      <a href="https://www.facebook.com/sam.seng.399/" target="_blank"><i class="fab fa-facebook text-blue-900" /></a>
+    </div>
+  </div>
 </div>
