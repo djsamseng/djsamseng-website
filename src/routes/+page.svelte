@@ -126,7 +126,7 @@
                 </div>
               </div>
               <div class="mx-auto mt-5">
-                <a href="https://apps.apple.com/us/app/onelook/id1615071061">
+                <a href="https://apps.apple.com/us/app/onelook-thesaurus/id1615071061?platform=iphone" target="_blank">
                   <img class="h-[62px]" src={DownloadOnAppStore} alt="Download on the app store"/>
                 </a>
               </div>
@@ -324,7 +324,12 @@
           <div class="">Love God</div>
           <div class="">Love Others</div>
           <div class="">Love Yourself</div>
-
+          <div class="w-5 mt-2">
+            <svg viewBox="0 0 404 564" xmlns="http://www.w3.org/2000/svg">
+              <title>Christian Cross</title>
+              <path stroke="#000" stroke-width="20" d="m202,2V562M2,202H402"/>
+            </svg>
+          </div>
         </div>
 
       </div>
