@@ -311,7 +311,7 @@
   </div>
 
 
-  <div class="p-4 min-h-[500px] pb-20">
+  <div class="p-4 min-h-[420px]">
     <div class="max-w-6xl mx-auto">
       <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="life" class="text-3xl py-5">Life</div>
@@ -320,10 +320,6 @@
         </div>
 
         <div class="flex flex-col items-center text-xl mt-5 text-center">
-          <div class="italic my-2">I'm a work in progress</div>
-          <div class="">Love God</div>
-          <div class="">Love Others</div>
-          <div class="">Love Yourself</div>
           <div class="w-5 mt-2">
             <svg viewBox="0 0 404 564" xmlns="http://www.w3.org/2000/svg">
               <title>Christian Cross</title>
