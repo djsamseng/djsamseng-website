@@ -1,4 +1,5 @@
 
+
 <script lang="ts">
   import TypingKeyboard from "$lib/components/typing-keyboard.svelte";
 	import ExperienceComponent from "$lib/components/experience-component.svelte";
@@ -23,7 +24,6 @@
     "Optimists do better in the long run. Get out of a relative mindset. Demonizing money is playing the status game. Stop sacrificing today for an imaginary tomorrow. Do what you love, do it better than anybody else, then find a way to map that to what society wants. Create a business in 3 months: raise money, assemble a team, and launch. It's fun to see what you can put together. Making money is giant lump sums helps not upgrade your lifestyle and frees you from the lust of money (fear of not having). If someone is talking a lot about how honest they are, they’re probably dishonest. When someone spends too much time talking about their own values or they’re talking themselves up, they’re covering for something. Be very careful about doing things you are fundamentally not going to be proud of, because they will damage you. The first time someone acts this way, I will warn them. By the way, nobody changes. Then I just distance myself from them. I cut them out of my life. Optimistic Contrarian. Problem solving: Discard memory and identity and focus on the problem. Praise specifically, criticize generally (not the person but the general activity). Leverage is how much of an advantage you have over the alternative - Naval Ravikant"
 
   ]
-
 </script>
 
 <div class="pb-10 xl:pb-20">

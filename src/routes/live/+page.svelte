@@ -1,7 +1,4 @@
-
 <script lang="ts">
-
-  import SamSengSquare from "$lib/assets/SamSengSquare.jpg";
 
   const collabQuickStart = [
     ["Run Cell", "Shift + Enter"],
@@ -40,9 +37,54 @@
       </div>
     </div>
 
+    <div class="mt-10">
+      <div class="text-3xl">Answers</div>
+      <div class="text-xl">
+        <div class="">
+          <span>1. Open the </span>
+          <a class=" text-blue-600" href="https://colab.research.google.com/drive/15p1lxrIXUWzI_DjbO7BAMfGG5VGJPboP?usp=sharing" target="_blank">Completed Notebook</a>
+        </div>
+        <div class="">2. Go to File. Save a Copy in Drive.</div>
+      </div>
+    </div>
 
+    <div class="mt-20 text-center">
+      <div class="text-3xl">The Blind Spot</div>
+      <div class="text-xl">
+        <span class="">Close your </span>
+        <span class="font-bold">right</span>
+        <span class="">eye and stare at the </span>
+        <span class="font-bold">+</span>
+      </div>
+      <div class="text-xl">
+        <div class="flex flex-row flex-nowrap mt-5 items-center">
+          <div class="flex-1" />
+          <div class="bg-white h-10 w-10 rounded-3xl "></div>
+          <div class="ml-[200px] sm:ml-[500px] text-7xl">+</div>
+          <div class="flex-1"/>
+        </div>
+      </div>
+    </div>
 
+    <div class="mt-[500px]">
+      <div class="text-3xl">Local Setup</div>
+      <div class="text-xl grid grid-cols-[min-content_1fr]">
+        <span class="my-auto">1. </span>
+        <div class="my-1">
+          <span class="border border-gray-500 px-2 py-1">pip3 install jupyter</span>
+        </div>
 
+        <span class="my-auto">2. </span>
+        <div class="my-1">
+          <span class="border border-gray-500 px-2 py-1">pip3 install notebook</span>
+        </div>
+
+        <span class="my-auto">3. </span>
+        <div class="my-1">
+          <span class="border border-gray-500 px-2 py-1">python3 -m notebook</span>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
