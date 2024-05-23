@@ -57,17 +57,18 @@
       <ExperienceComponent
         title="Bloomberg LP"
         years="2016 - 2021"
+        location="New York, New York"
         position="Software Engineer, Team Lead"
-        description="Fortunate to work with great coworkers developing the future of the Bloomberg Terminal."
+        description={null}
         sections={[
           {
             header: "Launchpad Team",
             bullets: [
-              "Software infrastructure full stack developer. We're developing UIs, the infrastructure that supports those UIs and the pipeline that connects that infrastructure all the way to the database layer.",
-              "We're modernizing the terminal from the ground up. The rearchitecting and redesigning of launchpad into a 21st century desktop environment is in our blood.",
-              "We're creating a new foundation for launchpad written in Typescript, JavaScript and C++. We're also using Python, SQL, CMake and DPKG.",
-              "As a client facing team we're on the front lines, triaging bug reports and investigating client issues. Additionally we're helping other engineering teams that use the launchpad infrastructure for their products.",
-              "We're working with product and engineering teams from across the company. This takes place in five main steps. 1) Intake and \"t-shirt\" size estimation 2) Stakeholder prioritization 3) Design documents and team discussions 4) Break down work into tasks and epics 5) Code, deliver incrementally and iterate.",
+              "Full stack software engineer on the Launchpad UI infrastructure team. We developed UIs, the infrastructure that supports those UIs and the pipeline that connects that infrastructure all the way to the database layer.",
+              "Rearchitected Launchpad into a 21st century desktop environment using TypeScript, JavaScript, C++, Python, SQL, CMake, DPKG and JIRA.",
+              "We took a legacy monolith system running C and gob code on sun and ibm servers and migrated to a hybrid system running UI local on the user’s desktop backed by services running on linux servers. One success of this was the ability to launch EMSX (a trading ticket launchpad component) in under 500ms worldwide versus the previous server side infrastructure with launch speed of 2 to 5 seconds especially in Asia / APAC",
+              "As a client facing team we were on the front lines, triaging bug reports and investigating client issues. Additionally we helping other engineering teams that use the launchpad infrastructure for their products.",
+              "We worked with product and engineering teams from across the company. This took place in five main steps. 1) Intake and \"t-shirt\" size estimation 2) Stakeholder prioritization 3) Design documents and team discussions 4) Break down work into tasks and epics 5) Code, deliver incrementally and iterate. We used JIRA sprints and JIRA projects to organize and execute on deliverables.",
               "Served as the Launchpad team lead managing a team of 5 software engineers",
             ]
           },
@@ -90,6 +91,7 @@
       <ExperienceComponent
           title="OneLook Thesaurus"
           years="2022 - 2023"
+          location="Fairfield, CT"
           position="iOS Developer (Contractor)"
           description={null}
           sections={[
@@ -139,6 +141,7 @@
       <ExperienceComponent
           title="Cushybots"
           years="2023 - Current"
+          location="Phnom Penh, Cambodia"
           position="Software Engineer (Contractor)"
           description={null}
           sections={[
@@ -156,6 +159,7 @@
       <ExperienceComponent
           title="Susquehanna International Group"
           years="Summer 2015"
+          location="Philidelphia, PA"
           position="Software Engineering Intern"
           description={null}
           sections={[
@@ -174,6 +178,7 @@
       <ExperienceComponent
           title="Lockheed Martin"
           years="Summer 2014"
+          location="Burlington, MA"
           position="Software Engineering Intern"
           description={null}
           sections={[
@@ -195,8 +200,8 @@
     <div class="max-w-6xl mx-auto">
       <div class="max-w-3xl xl:max-w-6xl mx-auto">
         <div id="skills" class="text-3xl py-5">Skills</div>
-
       </div>
+
       <div class="">
         <div class="text-xl">Programming Languages</div>
         <div class="flex flex-row flex-wrap">
@@ -222,6 +227,27 @@
         </div>
       </div>
 
+      <div class="max-w-3xl xl:max-w-6xl mx-auto">
+        <div class="text-3xl py-5">Education</div>
+      </div>
+
+      <ExperienceComponent
+        title="Rensselaer Polytechnic Institute"
+        years="Class of 2015"
+        location="3.99/4.0 GPA"
+        position="Bachelors of Science, Computer and Systems Engineering"
+        description={null}
+        sections={[]}
+        white={true}>
+        <div class=" space-y-5 my-5">
+            <ul class="list-disc ml-5">
+                <li>Summa Cum Laude</li>
+                <li>4.0 Award (2013, 2014)</li>
+                <li>Founding member of <a class="text-blue-500" href="https://github.com/Submitty/Submitty">Submitty</a> (Homework Server)</li>
+                <li>Member of Rensselaer Center for Open Source</li>
+            </ul>
+        </div>
+      </ExperienceComponent>
     </div>
   </div>
 
@@ -246,6 +272,7 @@
       <ExperienceComponent
           title="Artificial Intelligence Research"
           years="2021 - Current"
+          location={null}
           position="Software Engineer"
           description={null}
           sections={[
@@ -261,8 +288,27 @@
         />
 
         <ExperienceComponent
+          title="Enjoy CRM"
+          years="2023 - Current"
+          location={null}
+          position="Software Engineer"
+          description={null}
+          sections={[
+            {
+              bullets: [
+                "Built a Khmer CRM for our church using Typescript, Sveltekit and Supabase using Telegram as the login identifier as most people in Cambodia do not have email addresses",
+                "Features web (graphical) and text messaging (chat bot) user interfaces",
+                "Built rostering software for church volunteers",
+                "Used Typescript, Sveltekit, Supabase and AWS Lambda"
+              ]
+            }
+          ]}
+        />
+
+        <ExperienceComponent
           title="GatherBadger"
           years="2022"
+          location={null}
           position="Software Engineer"
           description={null}
           sections={[
@@ -277,6 +323,7 @@
         <ExperienceComponent
           title="TakeOff"
           years="2022-2023"
+          location={null}
           position="Software Engineer"
           description={null}
           sections={[
@@ -286,23 +333,6 @@
                 "Used Python, Typescript, React, TailwindCSS, Supabase, and AWS Lambda",
                 "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
                 "Submitted an open source pull request to AWS Lambda allowing options requests in testing. github.com/aws/aws-lambda-runtime-interface-emulator/pull/84"
-              ]
-            }
-          ]}
-        />
-
-        <ExperienceComponent
-          title="Enjoy CRM"
-          years="2023 - Current"
-          position="Software Engineer"
-          description={null}
-          sections={[
-            {
-              bullets: [
-                "Built a Customer Relationship Management platform for Enjoy Church",
-                "Features a web and Telegram user interface",
-                "Built rostering software for church volunteers",
-                "Used Typescript, Sveltekit, Supabase and AWS Lambda"
               ]
             }
           ]}
