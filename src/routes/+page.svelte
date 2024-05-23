@@ -257,11 +257,11 @@
       <div class="inline-block float-right text-center">
         <div class="">AI Research</div>
         <div class="text-xs">|</div>
+        <div class="">Enjoy CRM</div>
+        <div class="text-xs">|</div>
         <div class="">GatherBadger</div>
         <div class="text-xs">|</div>
         <div class="">TakeOff</div>
-        <div class="text-xs">|</div>
-        <div class="">Enjoy CRM</div>
       </div>
     </div>
     <div class="max-w-6xl mx-auto">
