@@ -243,7 +243,7 @@
             <ul class="list-disc ml-5">
                 <li>Summa Cum Laude</li>
                 <li>4.0 Award (2013, 2014)</li>
-                <li>Founding member of <a class="text-blue-500" href="https://github.com/Submitty/Submitty">Submitty</a> (Homework Server)</li>
+                <li>Member of founding team of <a class="text-blue-500" href="https://github.com/Submitty/Submitty">Submitty</a> (Homework Server)</li>
                 <li>Member of Rensselaer Center for Open Source</li>
             </ul>
         </div>
