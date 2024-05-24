@@ -259,9 +259,9 @@
         <div class="text-xs">|</div>
         <div class="">Enjoy CRM</div>
         <div class="text-xs">|</div>
-        <div class="">GatherBadger</div>
-        <div class="text-xs">|</div>
         <div class="">TakeOff</div>
+        <div class="text-xs">|</div>
+        <div class="">GatherBadger</div>
       </div>
     </div>
     <div class="max-w-6xl mx-auto">
@@ -289,7 +289,7 @@
 
         <ExperienceComponent
           title="Enjoy CRM"
-          years="2023 - Current"
+          years="2023"
           location={null}
           position="Software Engineer"
           description={null}
@@ -300,21 +300,6 @@
                 "Features web (graphical) and text messaging (chat bot) user interfaces",
                 "Built rostering software for church volunteers",
                 "Used Typescript, Sveltekit, Supabase and AWS Lambda"
-              ]
-            }
-          ]}
-        />
-
-        <ExperienceComponent
-          title="GatherBadger"
-          years="2022"
-          location={null}
-          position="Software Engineer"
-          description={null}
-          sections={[
-            {
-              bullets: [
-                "Built a gift giving search engine using TypeScript, React, Supabase and TailwindCSS"
               ]
             }
           ]}
@@ -333,6 +318,21 @@
                 "Used Python, Typescript, React, TailwindCSS, Supabase, and AWS Lambda",
                 "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
                 "Submitted an open source pull request to AWS Lambda allowing options requests in testing. github.com/aws/aws-lambda-runtime-interface-emulator/pull/84"
+              ]
+            }
+          ]}
+        />
+
+        <ExperienceComponent
+          title="GatherBadger"
+          years="2022"
+          location={null}
+          position="Software Engineer"
+          description={null}
+          sections={[
+            {
+              bullets: [
+                "Built a gift giving search engine using TypeScript, React, Supabase and TailwindCSS"
               ]
             }
           ]}
