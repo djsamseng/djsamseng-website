@@ -41,9 +41,7 @@
         <div class="text-xs">|</div>
         <div class="text-sm">2021</div>
         <div class="text-xs">|</div>
-        <div class="">Founder</div>
-        <div class="-my-2">+</div>
-        <div class="">Contractor</div>
+        <div class="">AI Researcher</div>
         <div class="text-xs">|</div>
         <div class="text-sm">2024</div>
       </div>
@@ -58,18 +56,24 @@
         title="Bloomberg LP"
         years="2016 - 2021"
         location="New York, New York"
-        position="Software Engineer, Team Lead"
+        position="Senior Software Engineer, Team Lead"
         description={null}
         sections={[
           {
             header: "Launchpad Team",
             bullets: [
-              "Full stack software engineer on the Launchpad UI infrastructure team. We developed UIs, the infrastructure that supports those UIs and the pipeline that connects that infrastructure all the way to the database layer.",
+              "Full stack senior software engineer and team lead for the Launchpad UI infrastructure team.",
+              "Saved the company $1 million+ in SLA breaches by fixing the sharktooth outage where client computers would freeze during trading and market hours.",
+              "Ended the threat of $100,000+ of lost subscriptions by fixing the sticky hotspot bug.",
+              "Built prototypes and proof of concepts on weekends for future $1 million+ projects.",
               "Rearchitected Launchpad into a 21st century desktop environment using TypeScript, JavaScript, C++, Python, SQL, CMake, DPKG and JIRA.",
-              "We took a legacy monolith system running C and gob code on sun and ibm servers and migrated to a hybrid system running UI local on the user’s desktop backed by services running on linux servers. One success of this was the ability to launch EMSX (a trading ticket launchpad component) in under 500ms worldwide versus the previous server side infrastructure with launch speed of 2 to 5 seconds especially in Asia / APAC",
-              "As a client facing team we were on the front lines, triaging bug reports and investigating client issues. Additionally we helping other engineering teams that use the launchpad infrastructure for their products.",
-              "We worked with product and engineering teams from across the company. This took place in five main steps. 1) Intake and \"t-shirt\" size estimation 2) Stakeholder prioritization 3) Design documents and team discussions 4) Break down work into tasks and epics 5) Code, deliver incrementally and iterate. We used JIRA sprints and JIRA projects to organize and execute on deliverables.",
-              "Served as the Launchpad team lead managing a team of 5 software engineers",
+              "Improved EMSX launch speed 10x for APAC clients by migrating it off of legacy C/gob code running on Sun and IBM servers onto a hybrid Linux and client side architecture.",
+              "Increased IB Messenger’s reliability for 100,000+ daily users by reducing it’s server side dependencies through cross team pull requests in spare time.",
+              "Reduced outage recovery time by creating a launchpad investigation tool in JACK<GO>.",
+              "Fixed the final bug to migrate SSBL and shutdown legacy infrastructure years overdue.",
+              "“Sam your unit tests saved me from so many bugs” - Alex",
+              "Created project plans and ran sprints in JIRA working with product and engineering teams to scope, prioritize, plan and execute on deliverables.",
+              "Built actionable growth plans for team members and worked with them to hit their goals."
             ]
           },
           {
@@ -88,6 +92,29 @@
           </div>
         </div>
       </ExperienceComponent>
+      <ExperienceComponent
+        title="AI Researcher"
+        years="2021 - Present"
+        location={null}
+        position="Building products at the intersection of neural networks, brain inspired visual understanding and AI augmented user interfaces"
+        description={null}
+        sections={[
+          {
+            bullets: [
+              "Built an AI augmented User Interface for construction plan analysis using PyTorch, Typescript, React, NextJS, TailwindCSS, Supabase and AWS lambda",
+              "Datamined pdfs using Python, Pytorch, Vision Transformers, CLIP and RAG to count windows, doors, lights, fixtures and calculate square footage for contractors, subcontractors & electricians.",
+              "Built a robot GUI using Python, Tkinter and ROS for Cushybots Corporation integrating a Gazebo robot simulation environment with arm movement and object manipulation.",
+              "3D printed a physical robotic hand leveraging computer vision for hand tracking",
+              "Submitted an open source pull request to AWS Lambda allowing options requests in testing github.com/aws/aws-lambda-runtime-interface-emulator/pull/84",
+              "Datamined pdfs, bank statements, election records and built geospatial UI’s to help promote democracy and accountability in government in Cambodia using Typescript, LeafletJS, Sveltekit, TailwindCSS, Supabase and Cloudflare",
+              "Investigated non-gradient methods for decision making",
+              "Filed a provisional patent for a new audio frequency transform",
+              "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
+              "Built the ability for the AI agent to learn and imitate a user or dataset"
+            ]
+          }
+        ]}
+      />
       <ExperienceComponent
           title="OneLook Thesaurus"
           years="2022 - 2023"
@@ -137,24 +164,6 @@
           </div>
         </div>
       </ExperienceComponent>
-
-      <ExperienceComponent
-          title="Cushybots"
-          years="2023 - Current"
-          location="Phnom Penh, Cambodia"
-          position="Software Engineer (Contractor)"
-          description={null}
-          sections={[
-            {
-              bullets: [
-                "Built a ROS robot control GUI using Python",
-                "Integrated a Gazebo robot simulation environment with arm movement and object manipulation"
-              ]
-            }
-          ]}
-      />
-
-
 
       <ExperienceComponent
           title="Susquehanna International Group"
@@ -218,6 +227,7 @@
       <div class="">
         <div class="text-xl">Frameworks and Technologies</div>
         <div class="flex flex-row flex-wrap">
+          <CardSkill name="PyTorch" digit="P" />
           <CardSkill name="SvelteKit" digit="SK" />
           <CardSkill name="iOS" digit="iOS" />
           <CardSkill name="Supabase" digit="S" />
@@ -269,23 +279,6 @@
         <div id="projects" class="text-3xl py-5">Projects</div>
       </div>
 
-      <ExperienceComponent
-          title="Artificial Intelligence Research"
-          years="2021 - Current"
-          location={null}
-          position="Software Engineer"
-          description={null}
-          sections={[
-            {
-              bullets: [
-                "Investigated non-gradient methods for decision making",
-                "Filed a provisional patent for a new audio frequency transform",
-                "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
-                "Built the ability for the AI agent to learn and imitate a user or dataset"
-              ]
-            }
-          ]}
-        />
 
         <ExperienceComponent
           title="Enjoy CRM"
@@ -305,23 +298,6 @@
           ]}
         />
 
-        <ExperienceComponent
-          title="TakeOff"
-          years="2022-2023"
-          location={null}
-          position="Software Engineer"
-          description={null}
-          sections={[
-            {
-              bullets: [
-                "Built an automatic construction plan summary provider for contractors, subcontractors and electricians to count windows, doors, lights, fixtures and calculate square footage",
-                "Used Python, Typescript, React, TailwindCSS, Supabase, and AWS Lambda",
-                "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
-                "Submitted an open source pull request to AWS Lambda allowing options requests in testing. github.com/aws/aws-lambda-runtime-interface-emulator/pull/84"
-              ]
-            }
-          ]}
-        />
 
         <ExperienceComponent
           title="GatherBadger"
