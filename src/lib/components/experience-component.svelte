@@ -17,8 +17,8 @@
 
 </script>
 
-<div class={`max-w-3xl xl:max-w-6xl mx-auto  ${white ? "bg-white text-black border border-black" : "bg-[#131717] text-white"} rounded-xl px-5 pt-5 pb-2 my-10`}>
-  <div class="max-w-3xl xl:max-w-6xl mx-auto">
+<div class={`max-w-3xl xl:max-w-5xl mx-auto  ${white ? "bg-white text-black border border-black" : "bg-[#131717] text-white"} rounded-xl px-5 pt-5 pb-2 my-10`}>
+  <div class="max-w-3xl xl:max-w-5xl mx-auto">
     <div class="flex flex-row">
       <div class="text-xl">{title}</div>
       <div class="flex-1" />

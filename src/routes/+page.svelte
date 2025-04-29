@@ -13,6 +13,31 @@
   import iphone9 from "$lib/assets/screenshot9.png";
 	import CardSkill from "$lib/components/card-skill.svelte";
 
+
+  function toBullets(text: string): Array<string> {
+    return text.split("• ")
+      .map(t => {
+        return t.trim();
+      })
+      .filter(t => {
+        return t.length > 0;
+      });
+  }
+
+  const test = `
+    • Wrote the official Python tutorial for Google A2A. https://google.github.io/A2A/#/tutorials/python/1_introduction
+    • Author of blpapi-mcp and blpapi-a2a, open source MCP and A2A providers of Bloomberg API data
+    • Building AI agents for construction pdf understanding using Agent2Agent (A2A), Model Context Protocol (MCP), Python, PyTorch, Vision Transformers, CLIP and RAG to count windows, doors, lights, fixtures and calculate square footage for contractors, subcontractors and electricians.
+    • Built an AI augmented user interface for construction plan analysis using Typescript, React, NextJS, TailwindCSS, Supabase and AWS lambda.
+    • Investigated non-gradient methods for decision making.
+    • Filed a provisional patent for a new audio time-frequency transform.
+    • Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment using Python, React and Typescript.
+    • Built the ability for the AI agent to learn and imitate a user or dataset using Chrome and puppeteer
+    • 3D printed a physical robotic hand leveraging computer vision for hand tracking.
+    • Submitted an open source pull request to AWS Lambda allowing options requests in testing. github.com/aws/aws-lambda-runtime-interface-emulator/pull/84
+    • Gave a free workshop on Deep Learning to Cambodian tech students. https://youtu.be/aq3ORyziTac
+  `;
+
   const lifeQuotes = [
     "Look at the person next to you, and love them like God loves them. Dream it, live it, feel it",
     "Find the gold in someone today - Laura Lentz",
@@ -47,7 +72,7 @@
       </div>
     </div>
     <div class="p-4">
-      <div class="max-w-3xl xl:max-w-6xl mx-auto">
+      <div class="max-w-3xl xl:max-w-5xl mx-auto">
         <div id="experience" class="text-3xl pt-5">Experience</div>
       </div>
 
@@ -61,20 +86,20 @@
         sections={[
           {
             header: "Launchpad Team",
-            bullets: [
-              "Full stack senior software engineer and team lead for the Launchpad UI infrastructure team.",
-              "Saved the company $1 million+ in SLA breaches by fixing the sharktooth outage where client computers would freeze during trading and market hours.",
-              "Ended the threat of $100,000+ of lost subscriptions by fixing the sticky hotspot bug.",
-              "Built prototypes and proof of concepts on weekends for future $1 million+ projects.",
-              "Rearchitected Launchpad into a 21st century desktop environment using TypeScript, JavaScript, C++, Python, SQL, CMake, DPKG and JIRA.",
-              "Improved EMSX launch speed 10x for APAC clients by migrating it off of legacy C/gob code running on Sun and IBM servers onto a hybrid Linux and client side architecture.",
-              "Increased IB Messenger’s reliability for 100,000+ daily users by reducing it’s server side dependencies through cross team pull requests in spare time.",
-              "Reduced outage recovery time by creating a launchpad investigation tool in JACK<GO>.",
-              "Fixed the final bug to migrate SSBL and shutdown legacy infrastructure years overdue.",
-              "“Sam your unit tests saved me from so many bugs” - Alex",
-              "Created project plans and ran sprints in JIRA working with product and engineering teams to scope, prioritize, plan and execute on deliverables.",
-              "Built actionable growth plans for team members and worked with them to hit their goals."
-            ]
+            bullets: toBullets(`
+              • Full stack senior software engineer and team lead for the Launchpad UI infrastructure team.
+              • Helped save the company $1 million+ in SLA breaches by fixing the sharktooth outage that caused client computers to freeze during trading and market hours.
+              • Protected $100,000+/year in subscription revenue by fixing the sticky hotspot bug.
+              • Prototyped future $1 million+ projects, helping shape the product roadmap.
+              • Modernized and re-architected Launchpad into a 21st century desktop environment using TypeScript, JavaScript, C++, Python, SQL, CMake, DPKG and JIRA.
+              • Improved EMSX launch speed 10x for APAC clients by migrating it off of legacy C/gob code on Sun and IBM servers and onto a hybrid Linux and client side architecture.
+              • Increased IB Messenger’s reliability for 100,000+ daily users by reducing it’s server side dependencies through cross team pull requests.
+              • Reduced outage recovery time by creating a launchpad investigation tool in JACK<GO>.
+              • Unblocked SSBL migration by fixing the final multiyear bugs, enabling the shutdown of legacy infrastructure years overdue.
+              • “Sam your unit tests saved me from so many bugs” – teammate.
+              • Led sprint planning, created JIRA projects, and prioritized backlogs at weekly, monthly, and quarterly levels to drive transparent execution with product and engineering teams.
+              • Built actionable growth plans for team members and worked with them monthly to hit their goals.
+            `)
           },
           {
             header: "Machine Learning Team",
@@ -100,18 +125,19 @@
         description={null}
         sections={[
           {
-            bullets: [
-              "Built an AI augmented User Interface for construction plan analysis using PyTorch, Typescript, React, NextJS, TailwindCSS, Supabase and AWS lambda",
-              "Datamined pdfs using Python, Pytorch, Vision Transformers, CLIP and RAG to count windows, doors, lights, fixtures and calculate square footage for contractors, subcontractors & electricians.",
-              "Built a robot GUI using Python, Tkinter and ROS for Cushybots Corporation integrating a Gazebo robot simulation environment with arm movement and object manipulation.",
-              "3D printed a physical robotic hand leveraging computer vision for hand tracking",
-              "Submitted an open source pull request to AWS Lambda allowing options requests in testing github.com/aws/aws-lambda-runtime-interface-emulator/pull/84",
-              "Datamined pdfs, bank statements, election records and built geospatial UI’s to help promote democracy and accountability in government in Cambodia using Typescript, LeafletJS, Sveltekit, TailwindCSS, Supabase and Cloudflare",
-              "Investigated non-gradient methods for decision making",
-              "Filed a provisional patent for a new audio frequency transform",
-              "Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment.",
-              "Built the ability for the AI agent to learn and imitate a user or dataset"
-            ]
+            bullets: toBullets(`
+              • Wrote the official Python tutorial for Google A2A. https://google.github.io/A2A/#/tutorials/python/1_introduction
+              • Author of blpapi-mcp and blpapi-a2a, open source MCP and A2A providers of Bloomberg API data
+              • Building AI agents for construction pdf understanding using Agent2Agent (A2A), Model Context Protocol (MCP), Python, PyTorch, Vision Transformers, CLIP and RAG to count windows, doors, lights, fixtures and calculate square footage for contractors, subcontractors and electricians.
+              • Built an AI augmented user interface for construction plan analysis using Typescript, React, NextJS, TailwindCSS, Supabase and AWS lambda.
+              • Investigated non-gradient methods for decision making.
+              • Filed a provisional patent for a new audio time-frequency transform.
+              • Built a framework for an AI agent to browse, listen, type and click in a web browser or desktop environment using Python, React and Typescript.
+              • Built the ability for the AI agent to learn and imitate a user or dataset using Chrome and puppeteer
+              • 3D printed a physical robotic hand leveraging computer vision for hand tracking.
+              • Submitted an open source pull request to AWS Lambda allowing options requests in testing. github.com/aws/aws-lambda-runtime-interface-emulator/pull/84
+              • Gave a free workshop on Deep Learning to Cambodian tech students. https://youtu.be/aq3ORyziTac
+            `)
           }
         ]}
       />
@@ -206,38 +232,30 @@
   </div>
 
   <div class="p-4 min-h-[500px]">
-    <div class="max-w-6xl mx-auto">
-      <div class="max-w-3xl xl:max-w-6xl mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <div class="max-w-3xl xl:max-w-5xl mx-auto">
         <div id="skills" class="text-3xl py-5">Skills</div>
       </div>
 
       <div class="">
         <div class="text-xl">Programming Languages</div>
         <div class="flex flex-row flex-wrap">
-          <CardSkill name="TypeScript" digit=".ts" />
-          <CardSkill name="JavaScript" digit=".js" />
-          <CardSkill name="Python" digit=".py" />
-          <CardSkill name="SwiftUI" digit=".swift" />
-          <CardSkill name="C++" digit=".cpp" />
-          <CardSkill name="SQL" digit=".sql" />
-          <CardSkill name="CSS" digit=".css" />
+          {#each [["TypeScript", ".ts"], ["JavaScript", ".js"], ["Python", ".py"], ["SwiftUI", ".swift"], ["C++", ".cpp"], ["SQL", ".sql"], ["CSS", ".css"]] as [name, digit], idx}
+            <CardSkill name={name} digit={digit} idx={idx} />
+          {/each}
         </div>
       </div>
 
       <div class="">
         <div class="text-xl">Frameworks and Technologies</div>
         <div class="flex flex-row flex-wrap">
-          <CardSkill name="PyTorch" digit="P" />
-          <CardSkill name="SvelteKit" digit="SK" />
-          <CardSkill name="iOS" digit="iOS" />
-          <CardSkill name="Supabase" digit="S" />
-          <CardSkill name="NextJS" digit="N" />
-          <CardSkill name="ReactJS" digit="R" />
-          <CardSkill name="Tailwind CSS" digit="T" />
+          {#each [["ReactJS", "R"], ["NextJS", "N"], ["PyTorch", "P"], ["SvelteKit", "SK"], ["iOS", "iOS"], ["Supabase", "S"], ["TailwindCSS", "T"]] as [name, digit], idx}
+            <CardSkill name={name} digit={digit} idx={idx + 3} />
+          {/each}
         </div>
       </div>
 
-      <div class="max-w-3xl xl:max-w-6xl mx-auto">
+      <div class="max-w-3xl xl:max-w-5xl mx-auto">
         <div class="text-3xl py-5">Education</div>
       </div>
 
@@ -274,8 +292,8 @@
         <div class="">GatherBadger</div>
       </div>
     </div>
-    <div class="max-w-6xl mx-auto">
-      <div class="max-w-3xl xl:max-w-6xl mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <div class="max-w-3xl xl:max-w-5xl mx-auto">
         <div id="projects" class="text-3xl py-5">Projects</div>
       </div>
 
@@ -318,8 +336,8 @@
 
 
   <div class="p-4 min-h-[420px]">
-    <div class="max-w-6xl mx-auto">
-      <div class="max-w-3xl xl:max-w-6xl mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <div class="max-w-3xl xl:max-w-5xl mx-auto">
         <div id="life" class="text-3xl py-5">Life</div>
         <div class="flex flex-col items-center">
           <img class="rounded-full w-[120px] h-[120px] md:w-[230px] md:h-[230px] object-cover " src={SamSengSquare} alt="Sam Seng" />
